@@ -37,7 +37,8 @@ body {
 }
 
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
   margin: 10px 0;
 }
@@ -50,7 +51,7 @@ h1, h2 {
   max-width: 1300px;
 }
 
-h2>a{
+h2>a {
   color: darkkhaki;
 }
 
@@ -77,10 +78,15 @@ h2>a{
 
 
 @-webkit-keyframes blink {
-  100% { color: rgba(34, 34, 34, 0); }
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
 }
+
 @keyframes blink {
-  100% { color: rgba(34, 34, 34, 0); }
+  100% {
+    color: rgba(34, 34, 34, 0);
+  }
 }
 
 .adv {
@@ -98,8 +104,8 @@ h2>a{
   font-weight: bold;
   cursor: pointer;
 }
-.adv span{
+
+.adv span {
   -webkit-animation: blink 1s linear infinite;
   animation: blink 1s linear infinite;
 }
-

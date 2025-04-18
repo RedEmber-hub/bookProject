@@ -1,4 +1,5 @@
 document.querySelector('.adv').remove(); // удаление рекламы
+document.body.style.backgroundImage = "url('image/you-dont-know-js.jpg')"; //смена фона страницы
 
 const booksContainer = document.querySelector('.books'); // контейнер для книг
 const arraybooks = Array.from(document.querySelectorAll(".book")); // массив книг
