@@ -1,0 +1,1 @@
+document.querySelector('.adv').remove(); // удаление рекламы
