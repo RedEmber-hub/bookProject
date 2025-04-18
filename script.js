@@ -47,3 +47,16 @@ const sortChaptersByNumber = bookIndex => {
 
 sortChaptersByNumber(1); // вторая книга
 sortChaptersByNumber(4); // пятая книга
+
+const addChapterToBook6 = () => {
+    const book6 = document.querySelectorAll('.book')[5];
+    const chapterList = book6.querySelector('ul');
+    const newChapter = document.createElement('li');
+    newChapter.textContent = 'Глава 8: За пределами ES6';
+
+    const chapters = Array.from(chapterList.querySelectorAll('li'));
+    const chapter7 = chapters.find(ch => ch.textContent.startsWith('Глава 7'));
+
+    chapterList.insertBefore(newChapter, chapter7.nextSibling);
+};
+addChapterToBook6();
